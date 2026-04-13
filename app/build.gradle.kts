@@ -47,6 +47,6 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
-//    Enables us to be able to read images from browser.
+//    Enables us to be able to access the HTTP functions.
     implementation("com.loopj.android:android-async-http:1.4.11")
 }

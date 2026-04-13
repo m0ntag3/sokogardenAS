@@ -44,17 +44,19 @@ class ApiHelper(var context: Context) {
 
     //Requires Access Token
     fun post_login(api: String, params: RequestParams) {
+//        Toast = Display/show
         Toast.makeText(context, "Please wait for response", Toast.LENGTH_LONG).show()
         val client = AsyncHttpClient(true, 80, 443)
 
         client.post(api, params, object : JsonHttpResponseHandler() {
             override fun onSuccess(
+//                What is seen on successful running on API tool(Postman)
                 statusCode: Int,
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
                 val message = response?.optString("message")
-                if (message == "Login success") {
+                if (message == "Login successful") {
                     val user = response.optJSONObject("user")
                     val username = user?.optString("username") ?: ""
                     val email = user?.optString("email") ?: ""
@@ -65,10 +67,10 @@ class ApiHelper(var context: Context) {
                     editor.putString("username", username)
                     editor.putString("email", email)
                     editor.apply()
-
+// Displays "Welcome (username)"
                     Toast.makeText(context, "Welcome $username", Toast.LENGTH_LONG).show()
 
-                    // Redirect to Dashboard
+                    // Redirect to Dashboard = MainActivity
                     val intent = Intent(context, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     context.startActivity(intent)
@@ -78,6 +80,7 @@ class ApiHelper(var context: Context) {
             }
 
             override fun onFailure(
+//                try catch statement(in React)
                 statusCode: Int,
                 headers: Array<out Header>?,
                 responseString: String?,
