@@ -43,6 +43,7 @@ class Signin : AppCompatActivity() {
             val data = RequestParams()
 
 //        Add/append/attach the email and the password
+//            put, details of user in key-value pairs in, data = store, details of user in key-value pairs in, data
             data.put("email", email.text.toString())
             data.put("password", password.text.toString())
 
@@ -51,6 +52,9 @@ class Signin : AppCompatActivity() {
 
 //        By use of the function post_login inside of helper class, post your data
             helper.post_login(api, data)
+
+            email.text.clear()
+            password.text.clear()
         }
     }
 }

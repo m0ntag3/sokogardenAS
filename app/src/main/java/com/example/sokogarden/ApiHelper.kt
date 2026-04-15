@@ -28,7 +28,7 @@ class ApiHelper(var context: Context) {
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
-                Toast.makeText(context, "Response: $response", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "User registered successfully", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(
@@ -67,7 +67,8 @@ class ApiHelper(var context: Context) {
                     editor.putString("username", username)
                     editor.putString("email", email)
                     editor.apply()
-// Displays "Welcome (username)"
+
+                    // Displays "Welcome (username)"
                     Toast.makeText(context, "Welcome $username", Toast.LENGTH_LONG).show()
 
                     // Redirect to Dashboard = MainActivity
