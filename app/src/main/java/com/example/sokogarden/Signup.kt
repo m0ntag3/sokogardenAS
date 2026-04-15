@@ -47,7 +47,7 @@ class Signup : AppCompatActivity() {
             // Add/Append the username, email, password and phone on the data
             data.put("username", username.text.toString().trim())
             data.put("email", email.text.toString().trim())
-            data.put("password", password.text.toString().trim())
+            data.put("password", password.text.toString())
             data.put("phone", phone.text.toString().trim())
 
             //import the ApiHelper Class

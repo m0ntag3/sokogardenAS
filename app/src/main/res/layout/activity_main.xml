@@ -31,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -63,28 +64,46 @@
             android:textSize="18sp"
             app:cornerRadius="8dp" />
 
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#8B0000"
+            android:visibility="gone"
+            android:fontFamily="@font/aladin"
+            android:textAllCaps="true"
+            android:textColor="#F9F4F0"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"/>
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+<!--    Below is the progressBar -->
+    <ProgressBar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
-        android:textSize="22sp"
-        android:textColor="#FFFFFF"
-        android:visibility="gone"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-light"/>
+        android:id="@+id/progressbar"/>
 
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="wrap_content"
+<!--    Below is the recyclerView-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#8B0000"
-        android:textColor="#F2F2F2"
-        android:visibility="gone"
-        app:cornerRadius="50dp"/>
+        tools:listitem="@layout/single_item" />
+
 
 </LinearLayout>

@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/soko"
+        android:icon="@drawable/sokoicon"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/soko"
+        android:roundIcon="@drawable/sokoicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sokogarden">
         <activity
