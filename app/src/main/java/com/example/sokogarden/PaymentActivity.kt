@@ -65,7 +65,7 @@ class PaymentActivity : AppCompatActivity() {
             // insert data into the RequestParams
                 // In this case we use the price imported from database(product_cost) and given the name cost
             data.put("amount", cost)
-            data.put("phone", phone)
+            data.put("phone", phone.text.toString().trim())
             data.put("description", description)
 
             // import the helper class

@@ -28,7 +28,7 @@ class ApiHelper(var context: Context) {
                 headers: Array<out Header>?,
                 response: JSONObject?
             ) {
-                Toast.makeText(context, "User registered successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Response: $response", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(
