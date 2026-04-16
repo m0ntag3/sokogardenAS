@@ -95,7 +95,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:text="New member? Join us here"
-                android:textColor="#555555"
+                android:textColor="#88751d"
                 android:textSize="16sp" />
 
         </LinearLayout>

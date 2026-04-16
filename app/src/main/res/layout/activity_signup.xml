@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:hint="Phone Number"
+                android:hint="Phone Number (+254#########)"
                 android:textColorHint="#666666"
                 app:boxStrokeColor="#D4AF37"
                 app:hintTextColor="#D4AF37">
@@ -129,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Already have an account? Sign In"
+                android:text="Account in avail? Sign In"
                 android:textAlignment="center"
                 android:textColor="#88751d"
                 android:textSize="14sp" />
