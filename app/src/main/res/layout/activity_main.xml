@@ -50,11 +50,26 @@
             app:cornerRadius="8dp" />
 
         <Button
+            android:id="@+id/aboutbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#0A5A9C"
+            android:fontFamily="@font/aladin"
+            android:padding="12dp"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textColor="#F9F4F0"
+            android:textSize="18sp"
+            app:cornerRadius="8dp" />
+
+        <Button
             android:id="@+id/signinbtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:backgroundTint="#043927"
             android:fontFamily="@font/aladin"
             android:padding="12dp"
